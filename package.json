@@ -22,27 +22,27 @@
   ],
   "icon": "icon.png",
   "activationEvents": [
-    "workspaceContains:workspace.json", 
+    "workspaceContains:workspace.json",
     "workspaceContains:nx.json"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "views": {
       "explorer": [
-          {
-              "id": "nxApps",
-              "name": "NX Projects",
-              "visibility": "collapsed"
-          }
+        {
+          "id": "nxApps",
+          "name": "NX Projects",
+          "visibility": "collapsed"
+        }
       ]
     },
     "menus": {
       "view/title": [
-          {
-              "command": "nxApps.refresh",
-              "when": "view == nxApps",
-              "group": "navigation"
-          }
+        {
+          "command": "nxApps.refresh",
+          "when": "view == nxApps",
+          "group": "navigation"
+        }
       ]
     },
     "viewsWelcome": [
@@ -72,17 +72,18 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.86.0",
-    "@types/mocha": "^10.0.6",
-    "@types/node": "18.x",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3",
-    "ts-loader": "^9.5.1",
-    "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4",
-    "@vscode/test-cli": "^0.0.6",
-    "@vscode/test-electron": "^2.3.9"
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.13.4",
+    "@types/vscode": "^1.97.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.20.1",
+    "is-core-module": "^2.16.1",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
   }
 }

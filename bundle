@@ -1,0 +1,16 @@
+#!/bin/bash
+
+OUT_DIR="nx-filter-deep"
+
+if [ -d "$OUT_DIR" ]; then
+    rm -rf $OUT_DIR
+    mkdir $OUT_DIR
+fi
+
+cp -r dist $OUT_DIR/dist
+cp CHANGELOG.md $OUT_DIR/CHANGELOG.md
+cp LICENSE.md $OUT_DIR/LICENSE.md
+cp package.json $OUT_DIR/package.json
+cp README.md $OUT_DIR/README.md
+cp icon.png $OUT_DIR/icon.png
+cp usage.gif $OUT_DIR/usage.gif
